@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Personal portfolio website for Mathew Somy - Cybersecurity Engineer",
   "private": true,
-  "homepage": "https://mathewsomy.github.io/mathewsomy.github.io",
+  "homepage": "https://mathewsomy.github.io",
   "type": "module",
   "scripts": {
     "dev": "vite",
