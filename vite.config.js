@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/personal-website/', // Update this to match your GitHub repository name
+  base: '/mathewsomy.github.io/',
   server: {
     port: 3000,
     open: true,
