@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cyber-darker text-gray-100 font-poppins;
+    overflow-x: hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-cyber-blue via-cyber-green to-cyber-purple bg-clip-text text-transparent;
+  }
+
+  .cyber-glow {
+    text-shadow: 0 0 10px rgba(0, 217, 255, 0.5),
+                 0 0 20px rgba(0, 217, 255, 0.3),
+                 0 0 30px rgba(0, 217, 255, 0.2);
+  }
+
+  .card-glow {
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.1),
+                0 0 40px rgba(0, 217, 255, 0.05);
+  }
+
+  .card-glow-green {
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.1),
+                0 0 40px rgba(0, 255, 136, 0.05);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0e27;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00d9ff, #00ff88);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #00ff88, #00d9ff);
+}
+
+/* Selection */
+::selection {
+  background-color: rgba(0, 217, 255, 0.3);
+  color: #fff;
+}
+
+/* Animated background grid */
+.cyber-grid-bg {
+  background-image: 
+    linear-gradient(rgba(0, 217, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 217, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: gridMove 20s linear infinite;
+}
+
+@keyframes gridMove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}
